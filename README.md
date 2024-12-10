@@ -1,9 +1,9 @@
-# library.h
+# menu.h
 
 ## Get started
 
 ```bash
-wget https://github.com/IncludeOnly/<library>.h/blob/main/<library>.h
+wget https://raw.githubusercontent.com/IncludeOnly/menu.h/refs/heads/main/menu.h
 ```
 
 ## Example
@@ -15,9 +15,9 @@ wget https://github.com/IncludeOnly/<library>.h/blob/main/<library>.h
 ## If you really need to link
 
 ```bash
-mv <library>.h <library>.c
-cc -o lib<library>.so <library>.c -fPIC -D<LIBRARY>_IMPLEMENTATION -shared
-mv <library>.c <library>.h
+mv menu.h menu.c
+cc -o libmenu.so menu.c -fPIC -DMENU_IMPLEMENTATION -shared
+mv menu.c menu.h
 ```
 
 ## License
