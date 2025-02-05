@@ -33,119 +33,119 @@
 // TODO: Add more keys
 typedef enum {
     // arrows (defined later)
-    KEY_ARROW_UP,
-    KEY_ARROW_DOWN,
-    KEY_ARROW_LEFT,
-    KEY_ARROW_RIGHT,
+    MENU_KEY_ARROW_UP,
+    MENU_KEY_ARROW_DOWN,
+    MENU_KEY_ARROW_LEFT,
+    MENU_KEY_ARROW_RIGHT,
 
-    KEY_UNKNOWN = -1,
-    KEY_ENTER = 10,
-    KEY_BACKSPACE = 127,
-    KEY_TAB = 9,
-    KEY_ESC = 27,
-    KEY_SPACE = 32,
+    MENU_KEY_UNKNOWN = -1,
+    MENU_KEY_ENTER = 10,
+    MENU_KEY_BACKSPACE = 127,
+    MENU_KEY_TAB = 9,
+    MENU_KEY_ESC = 27,
+    MENU_KEY_SPACE = 32,
 
     // numbers
-    KEY_0 = '0',
-    KEY_1 = '1',
-    KEY_2 = '2',
-    KEY_3 = '3',
-    KEY_4 = '4',
-    KEY_5 = '5',
-    KEY_6 = '6',
-    KEY_7 = '7',
-    KEY_8 = '8',
-    KEY_9 = '9',
+    MENU_KEY_0 = '0',
+    MENU_KEY_1 = '1',
+    MENU_KEY_2 = '2',
+    MENU_KEY_3 = '3',
+    MENU_KEY_4 = '4',
+    MENU_KEY_5 = '5',
+    MENU_KEY_6 = '6',
+    MENU_KEY_7 = '7',
+    MENU_KEY_8 = '8',
+    MENU_KEY_9 = '9',
 
     // uppercase
-    KEY_A = 'A',
-    KEY_B = 'B',
-    KEY_C = 'C',
-    KEY_D = 'D',
-    KEY_E = 'E',
-    KEY_F = 'F',
-    KEY_G = 'G',
-    KEY_H = 'H',
-    KEY_I = 'I',
-    KEY_J = 'J',
-    KEY_K = 'K',
-    KEY_L = 'L',
-    KEY_M = 'M',
-    KEY_N = 'N',
-    KEY_O = 'O',
-    KEY_P = 'P',
-    KEY_Q = 'Q',
-    KEY_R = 'R',
-    KEY_S = 'S',
-    KEY_T = 'T',
-    KEY_U = 'U',
-    KEY_V = 'V',
-    KEY_W = 'W',
-    KEY_X = 'X',
-    KEY_Y = 'Y',
-    KEY_Z = 'Z',
+    MENU_KEY_A = 'A',
+    MENU_KEY_B = 'B',
+    MENU_KEY_C = 'C',
+    MENU_KEY_D = 'D',
+    MENU_KEY_E = 'E',
+    MENU_KEY_F = 'F',
+    MENU_KEY_G = 'G',
+    MENU_KEY_H = 'H',
+    MENU_KEY_I = 'I',
+    MENU_KEY_J = 'J',
+    MENU_KEY_K = 'K',
+    MENU_KEY_L = 'L',
+    MENU_KEY_M = 'M',
+    MENU_KEY_N = 'N',
+    MENU_KEY_O = 'O',
+    MENU_KEY_P = 'P',
+    MENU_KEY_Q = 'Q',
+    MENU_KEY_R = 'R',
+    MENU_KEY_S = 'S',
+    MENU_KEY_T = 'T',
+    MENU_KEY_U = 'U',
+    MENU_KEY_V = 'V',
+    MENU_KEY_W = 'W',
+    MENU_KEY_X = 'X',
+    MENU_KEY_Y = 'Y',
+    MENU_KEY_Z = 'Z',
 
     // lowercase
-    KEY_a = 'a',
-    KEY_b = 'b',
-    KEY_c = 'c',
-    KEY_d = 'd',
-    KEY_e = 'e',
-    KEY_f = 'f',
-    KEY_g = 'g',
-    KEY_h = 'h',
-    KEY_i = 'i',
-    KEY_j = 'j',
-    KEY_k = 'k',
-    KEY_l = 'l',
-    KEY_m = 'm',
-    KEY_n = 'n',
-    KEY_o = 'o',
-    KEY_p = 'p',
-    KEY_q = 'q',
-    KEY_r = 'r',
-    KEY_s = 's',
-    KEY_t = 't',
-    KEY_u = 'u',
-    KEY_v = 'v',
-    KEY_w = 'w',
-    KEY_x = 'x',
-    KEY_y = 'y',
-    KEY_z = 'z',
+    MENU_KEY_a = 'a',
+    MENU_KEY_b = 'b',
+    MENU_KEY_c = 'c',
+    MENU_KEY_d = 'd',
+    MENU_KEY_e = 'e',
+    MENU_KEY_f = 'f',
+    MENU_KEY_g = 'g',
+    MENU_KEY_h = 'h',
+    MENU_KEY_i = 'i',
+    MENU_KEY_j = 'j',
+    MENU_KEY_k = 'k',
+    MENU_KEY_l = 'l',
+    MENU_KEY_m = 'm',
+    MENU_KEY_n = 'n',
+    MENU_KEY_o = 'o',
+    MENU_KEY_p = 'p',
+    MENU_KEY_q = 'q',
+    MENU_KEY_r = 'r',
+    MENU_KEY_s = 's',
+    MENU_KEY_t = 't',
+    MENU_KEY_u = 'u',
+    MENU_KEY_v = 'v',
+    MENU_KEY_w = 'w',
+    MENU_KEY_x = 'x',
+    MENU_KEY_y = 'y',
+    MENU_KEY_z = 'z',
 
     // special characters
-    KEY_EXCLAMATION = '!',
-    KEY_AT = '@',
-    KEY_HASH = '#',
-    KEY_DOLLAR = '$',
-    KEY_PERCENT = '%',
-    KEY_CARET = '^',
-    KEY_AMPERSAND = '&',
-    KEY_ASTERISK = '*',
-    KEY_LEFT_PAREN = '(',
-    KEY_RIGHT_PAREN = ')',
-    KEY_DASH = '-',
-    KEY_UNDERSCORE = '_',
-    KEY_EQUAL = '=',
-    KEY_PLUS = '+',
-    KEY_LEFT_BRACKET = '[',
-    KEY_RIGHT_BRACKET = ']',
-    KEY_LEFT_BRACE = '{',
-    KEY_RIGHT_BRACE = '}',
-    KEY_SEMICOLON = ';',
-    KEY_COLON = ':',
-    KEY_SINGLE_QUOTE = '\'',
-    KEY_DOUBLE_QUOTE = '"',
-    KEY_COMMA = ',',
-    KEY_PERIOD = '.',
-    KEY_LESS = '<',
-    KEY_GREATER = '>',
-    KEY_SLASH = '/',
-    KEY_QUESTION = '?',
-    KEY_BACKSLASH = '\\',
-    KEY_PIPE = '|',
-    KEY_BACKTICK = '`',
-    KEY_TILDE = '~',
+    MENU_KEY_EXCLAMATION = '!',
+    MENU_KEY_AT = '@',
+    MENU_KEY_HASH = '#',
+    MENU_KEY_DOLLAR = '$',
+    MENU_KEY_PERCENT = '%',
+    MENU_KEY_CARET = '^',
+    MENU_KEY_AMPERSAND = '&',
+    MENU_KEY_ASTERISK = '*',
+    MENU_KEY_LEFT_PAREN = '(',
+    MENU_KEY_RIGHT_PAREN = ')',
+    MENU_KEY_DASH = '-',
+    MENU_KEY_UNDERSCORE = '_',
+    MENU_KEY_EQUAL = '=',
+    MENU_KEY_PLUS = '+',
+    MENU_KEY_LEFT_BRACKET = '[',
+    MENU_KEY_RIGHT_BRACKET = ']',
+    MENU_KEY_LEFT_BRACE = '{',
+    MENU_KEY_RIGHT_BRACE = '}',
+    MENU_KEY_SEMICOLON = ';',
+    MENU_KEY_COLON = ':',
+    MENU_KEY_SINGLE_QUOTE = '\'',
+    MENU_KEY_DOUBLE_QUOTE = '"',
+    MENU_KEY_COMMA = ',',
+    MENU_KEY_PERIOD = '.',
+    MENU_KEY_LESS = '<',
+    MENU_KEY_GREATER = '>',
+    MENU_KEY_SLASH = '/',
+    MENU_KEY_QUESTION = '?',
+    MENU_KEY_BACKSLASH = '\\',
+    MENU_KEY_PIPE = '|',
+    MENU_KEY_BACKTICK = '`',
+    MENU_KEY_TILDE = '~',
 } ClibKey;
 
 typedef void (*MenuPrintOptionFunc)(const char* option, int is_selected, int color);
@@ -221,11 +221,11 @@ MENUAPI int menu_getch() {
             // Handle extended keys (arrows, function keys)
             ch = _getch();
             switch (ch) {
-                case 72: return KEY_ARROW_UP;
-                case 80: return KEY_ARROW_DOWN;
-                case 75: return KEY_ARROW_LEFT;
-                case 77: return KEY_ARROW_RIGHT;
-                default: return KEY_UNKNOWN;
+                case 72: return MENU_KEY_ARROW_UP;
+                case 80: return MENU_KEY_ARROW_DOWN;
+                case 75: return MENU_KEY_ARROW_LEFT;
+                case 77: return MENU_KEY_ARROW_RIGHT;
+                default: return MENU_KEY_UNKNOWN;
             }
         }
     #else
@@ -233,125 +233,125 @@ MENUAPI int menu_getch() {
         if (ch == 27) {
             if (getchar() == '[') {
                 switch (getchar()) {
-                    case 'A': return KEY_ARROW_UP;
-                    case 'B': return KEY_ARROW_DOWN;
-                    case 'C': return KEY_ARROW_RIGHT;
-                    case 'D': return KEY_ARROW_LEFT;
-                    default: return KEY_UNKNOWN;
+                    case 'A': return MENU_KEY_ARROW_UP;
+                    case 'B': return MENU_KEY_ARROW_DOWN;
+                    case 'C': return MENU_KEY_ARROW_RIGHT;
+                    case 'D': return MENU_KEY_ARROW_LEFT;
+                    default: return MENU_KEY_UNKNOWN;
                 }
             }
-            return KEY_ESC;
+            return MENU_KEY_ESC;
         }
     #endif
 
     switch (ch) {
-        case 10: return KEY_ENTER;
-        case 127: return KEY_BACKSPACE;
-        case 9: return KEY_TAB;
-        case 27: return KEY_ESC;
-        case 32: return KEY_SPACE;
+        case 10: return MENU_KEY_ENTER;
+        case 127: return MENU_KEY_BACKSPACE;
+        case 9: return MENU_KEY_TAB;
+        case 27: return MENU_KEY_ESC;
+        case 32: return MENU_KEY_SPACE;
 
         // digits
-        case '0': return KEY_0;
-        case '1': return KEY_1;
-        case '2': return KEY_2;
-        case '3': return KEY_3;
-        case '4': return KEY_4;
-        case '5': return KEY_5;
-        case '6': return KEY_6;
-        case '7': return KEY_7;
-        case '8': return KEY_8;
-        case '9': return KEY_9;
+        case '0': return MENU_KEY_0;
+        case '1': return MENU_KEY_1;
+        case '2': return MENU_KEY_2;
+        case '3': return MENU_KEY_3;
+        case '4': return MENU_KEY_4;
+        case '5': return MENU_KEY_5;
+        case '6': return MENU_KEY_6;
+        case '7': return MENU_KEY_7;
+        case '8': return MENU_KEY_8;
+        case '9': return MENU_KEY_9;
 
         // uppercase
-        case 'A': return KEY_A;
-        case 'B': return KEY_B;
-        case 'C': return KEY_C;
-        case 'D': return KEY_D;
-        case 'E': return KEY_E;
-        case 'F': return KEY_F;
-        case 'G': return KEY_G;
-        case 'H': return KEY_H;
-        case 'I': return KEY_I;
-        case 'J': return KEY_J;
-        case 'K': return KEY_K;
-        case 'L': return KEY_L;
-        case 'M': return KEY_M;
-        case 'N': return KEY_N;
-        case 'O': return KEY_O;
-        case 'P': return KEY_P;
-        case 'Q': return KEY_Q;
-        case 'R': return KEY_R;
-        case 'S': return KEY_S;
-        case 'T': return KEY_T;
-        case 'U': return KEY_U;
-        case 'V': return KEY_V;
-        case 'W': return KEY_W;
-        case 'X': return KEY_X;
-        case 'Y': return KEY_Y;
-        case 'Z': return KEY_Z;
+        case 'A': return MENU_KEY_A;
+        case 'B': return MENU_KEY_B;
+        case 'C': return MENU_KEY_C;
+        case 'D': return MENU_KEY_D;
+        case 'E': return MENU_KEY_E;
+        case 'F': return MENU_KEY_F;
+        case 'G': return MENU_KEY_G;
+        case 'H': return MENU_KEY_H;
+        case 'I': return MENU_KEY_I;
+        case 'J': return MENU_KEY_J;
+        case 'K': return MENU_KEY_K;
+        case 'L': return MENU_KEY_L;
+        case 'M': return MENU_KEY_M;
+        case 'N': return MENU_KEY_N;
+        case 'O': return MENU_KEY_O;
+        case 'P': return MENU_KEY_P;
+        case 'Q': return MENU_KEY_Q;
+        case 'R': return MENU_KEY_R;
+        case 'S': return MENU_KEY_S;
+        case 'T': return MENU_KEY_T;
+        case 'U': return MENU_KEY_U;
+        case 'V': return MENU_KEY_V;
+        case 'W': return MENU_KEY_W;
+        case 'X': return MENU_KEY_X;
+        case 'Y': return MENU_KEY_Y;
+        case 'Z': return MENU_KEY_Z;
 
         // lowercase
-        case 'a': return KEY_a;
-        case 'b': return KEY_b;
-        case 'c': return KEY_c;
-        case 'd': return KEY_d;
-        case 'e': return KEY_e;
-        case 'f': return KEY_f;
-        case 'g': return KEY_g;
-        case 'h': return KEY_h;
-        case 'i': return KEY_i;
-        case 'j': return KEY_j;
-        case 'k': return KEY_k;
-        case 'l': return KEY_l;
-        case 'm': return KEY_m;
-        case 'n': return KEY_n;
-        case 'o': return KEY_o;
-        case 'p': return KEY_p;
-        case 'q': return KEY_q;
-        case 'r': return KEY_r;
-        case 's': return KEY_s;
-        case 't': return KEY_t;
-        case 'u': return KEY_u;
-        case 'v': return KEY_v;
-        case 'w': return KEY_w;
-        case 'x': return KEY_x;
-        case 'y': return KEY_y;
-        case 'z': return KEY_z;
+        case 'a': return MENU_KEY_a;
+        case 'b': return MENU_KEY_b;
+        case 'c': return MENU_KEY_c;
+        case 'd': return MENU_KEY_d;
+        case 'e': return MENU_KEY_e;
+        case 'f': return MENU_KEY_f;
+        case 'g': return MENU_KEY_g;
+        case 'h': return MENU_KEY_h;
+        case 'i': return MENU_KEY_i;
+        case 'j': return MENU_KEY_j;
+        case 'k': return MENU_KEY_k;
+        case 'l': return MENU_KEY_l;
+        case 'm': return MENU_KEY_m;
+        case 'n': return MENU_KEY_n;
+        case 'o': return MENU_KEY_o;
+        case 'p': return MENU_KEY_p;
+        case 'q': return MENU_KEY_q;
+        case 'r': return MENU_KEY_r;
+        case 's': return MENU_KEY_s;
+        case 't': return MENU_KEY_t;
+        case 'u': return MENU_KEY_u;
+        case 'v': return MENU_KEY_v;
+        case 'w': return MENU_KEY_w;
+        case 'x': return MENU_KEY_x;
+        case 'y': return MENU_KEY_y;
+        case 'z': return MENU_KEY_z;
 
         // special characters
-        case '!': return KEY_EXCLAMATION;
-        case '@': return KEY_AT;
-        case '#': return KEY_HASH;
-        case '$': return KEY_DOLLAR;
-        case '%': return KEY_PERCENT;
-        case '^': return KEY_CARET;
-        case '&': return KEY_AMPERSAND;
-        case '*': return KEY_ASTERISK;
-        case '(': return KEY_LEFT_PAREN;
-        case ')': return KEY_RIGHT_PAREN;
-        case '-': return KEY_DASH;
-        case '_': return KEY_UNDERSCORE;
-        case '=': return KEY_EQUAL;
-        case '+': return KEY_PLUS;
-        case '[': return KEY_LEFT_BRACKET;
-        case ']': return KEY_RIGHT_BRACKET;
-        case '{': return KEY_LEFT_BRACE;
-        case '}': return KEY_RIGHT_BRACE;
-        case ';': return KEY_SEMICOLON;
-        case ':': return KEY_COLON;
-        case '\'': return KEY_SINGLE_QUOTE;
-        case '"': return KEY_DOUBLE_QUOTE;
-        case ',': return KEY_COMMA;
-        case '.': return KEY_PERIOD;
-        case '<': return KEY_LESS;
-        case '>': return KEY_GREATER;
-        case '/': return KEY_SLASH;
-        case '?': return KEY_QUESTION;
-        case '\\': return KEY_BACKSLASH;
-        case '|': return KEY_PIPE;
-        case '`': return KEY_BACKTICK;
-        case '~': return KEY_TILDE;
+        case '!': return MENU_KEY_EXCLAMATION;
+        case '@': return MENU_KEY_AT;
+        case '#': return MENU_KEY_HASH;
+        case '$': return MENU_KEY_DOLLAR;
+        case '%': return MENU_KEY_PERCENT;
+        case '^': return MENU_KEY_CARET;
+        case '&': return MENU_KEY_AMPERSAND;
+        case '*': return MENU_KEY_ASTERISK;
+        case '(': return MENU_KEY_LEFT_PAREN;
+        case ')': return MENU_KEY_RIGHT_PAREN;
+        case '-': return MENU_KEY_DASH;
+        case '_': return MENU_KEY_UNDERSCORE;
+        case '=': return MENU_KEY_EQUAL;
+        case '+': return MENU_KEY_PLUS;
+        case '[': return MENU_KEY_LEFT_BRACKET;
+        case ']': return MENU_KEY_RIGHT_BRACKET;
+        case '{': return MENU_KEY_LEFT_BRACE;
+        case '}': return MENU_KEY_RIGHT_BRACE;
+        case ';': return MENU_KEY_SEMICOLON;
+        case ':': return MENU_KEY_COLON;
+        case '\'': return MENU_KEY_SINGLE_QUOTE;
+        case '"': return MENU_KEY_DOUBLE_QUOTE;
+        case ',': return MENU_KEY_COMMA;
+        case '.': return MENU_KEY_PERIOD;
+        case '<': return MENU_KEY_LESS;
+        case '>': return MENU_KEY_GREATER;
+        case '/': return MENU_KEY_SLASH;
+        case '?': return MENU_KEY_QUESTION;
+        case '\\': return MENU_KEY_BACKSLASH;
+        case '|': return MENU_KEY_PIPE;
+        case '`': return MENU_KEY_BACKTICK;
+        case '~': return MENU_KEY_TILDE;
 
         default: return ch;
     }
@@ -420,13 +420,13 @@ MENUAPI int menu(const char* title, int color, MenuPrintOptionFunc print_option,
 
         int pressed = menu_getch();
         switch (pressed) {
-            case KEY_ARROW_UP:
+            case MENU_KEY_ARROW_UP:
                 selected = (selected + option_count - 1) % option_count; // Wrap around
                 break;
-            case KEY_ARROW_DOWN:
+            case MENU_KEY_ARROW_DOWN:
                 selected = (selected + 1) % option_count; // Wrap around
                 break;
-            case KEY_ENTER:
+            case MENU_KEY_ENTER:
                 free(options);
                 menu_enable_input_buffering();
                 return selected;
